@@ -1,0 +1,104 @@
+/* Default (Light Mode) */
+body {
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Dark Mode */
+  body.dark-mode {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  /* Global styles for dark mode */
+  .dark-mode {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  .dark-mode a {
+    color: #cccccc;
+  }
+  
+  .dark-mode a:hover {
+    color: #ffffff;
+  }
+  
+  .dark-mode button {
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .dark-mode button:hover {
+    background-color: #444444;
+  }
+  
+  /* Header specific styles */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff; /* Default light mode background */
+    color: #000000;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header.dark {
+    background-color: #333333; /* Dark mode background */
+    color: #ffffff;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo h1 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-button,
+  .toggle-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  .nav-button:hover,
+  .toggle-button:hover {
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 5px;
+  }
+  
+  .toggle-switch {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Dark mode adjustments for buttons */
+  .header.dark .nav-button,
+  .header.dark .toggle-button {
+    color: #cccccc;
+  }
+  
+  .header.dark .nav-button:hover,
+  .header.dark .toggle-button:hover {
+    background-color: #0056b3;
+  }
